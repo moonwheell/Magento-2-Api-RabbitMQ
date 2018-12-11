@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Gwd\CustomCatalog\Api\CustomCatalogApiInterface" type="Gwd\CustomCatalog\Model\CustomCatalogApi"/>
+    <preference for="Gwd\CustomCatalog\Api\UpdateProductInterface" type="Gwd\CustomCatalog\Model\UpdateProductApi"/>
+
+    <type name="Gwd\CustomCatalog\Model\UpdateProductApi">
+        <arguments>
+            <argument name="publisher" xsi:type="object">Rcason\Mq\Model\Publisher</argument>
+        </arguments>
+    </type>
+
+</config>

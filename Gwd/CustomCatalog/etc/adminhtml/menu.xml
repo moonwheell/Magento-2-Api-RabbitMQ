@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="Gwd_CustomCatalog::gwd_custom_index" title="CustomCatalog" module="Gwd_CustomCatalog"
+             sortOrder="9999" parent="Magento_Catalog::inventory" action="customcatalog/custom/index"
+             resource="Gwd_CustomCatalog::gwd_custom_index"/>
+    </menu>
+</config>
